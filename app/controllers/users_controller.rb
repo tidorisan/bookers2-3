@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
 	def index
 		# user show ログインしているユーザのみにする
-		@user = current_user
+		# 直接viewに書いたcurrent_user.name
+		# @user = current_user
 		# book new
 		@book = Book.new
 		# users index
+		@users = User.all
 	end
 
 	def show

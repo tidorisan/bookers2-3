@@ -3092,3 +3092,618 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 157ms (Views: 147.2ms | ActiveRecord: 0.5ms)
 
 
+Completed 200 OK in 800ms (Views: 791.6ms | ActiveRecord: 0.6ms)
+
+
+users" WHEREonsole from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (354.0ms)
+Completed 500 Internal Server Error in 408ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `profile_image' for #<#<Class:0x0000000006747d58>:0x00007fef586044c0>):
+    55: 					<th>image</th> <th>name</th><th><th></th>
+    56: 				</tr>
+    57: 				<tr>
+    58: 					<td><%= attachment_image_tag @user, profile_image %></td> <td><%= @user.name %></td> <td><%= link_to "show", user_path(@user.id) %></td>
+    59: 				</tr>
+    60: 			</table>
+    61: 		</div>
+  
+app/views/users/index.html.erb:58:in `_app_views_users_index_html_erb___1142922336951571000_54143280'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:34:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (368.1ms)
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `profile_image' for #<#<Class:0x0000000006747d58>:0x0000000004be6898>):
+    55: 					<th>image</th> <th>name</th><th><th></th>
+    56: 				</tr>
+    57: 				<tr>
+    58: 					<td><%= attachment_image_tag @user, profile_image %></td> <td><%= @user.name %></td> <td><%= link_to "show", user_path(@user.id) %></td>
+    59: 				</tr>
+    60: 			</table>
+    61: 		</div>
+  
+app/views/users/index.html.erb:58:in `_app_views_users_index_html_erb___1142922336951571000_39821880'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:35:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 800ms (Views: 791.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:39:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 932ms (Views: 884.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:39:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 119ms (Views: 112.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:39:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 145ms (Views: 135.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:58:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 118ms (Views: 111.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:58:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 108ms (Views: 102.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:59:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 3.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x0000000006c1df80>):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:00:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (22.4ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    20: 				</div>
+    21: 				<div>
+    22: 					<!-- ログインじのみ編集できるようにする -->
+    23: 					<%= link_to "edit仮", edit_user_path(@user.id) %>
+    24: 				</div>
+    25: 			</div>
+    26: 
+  
+app/views/users/index.html.erb:23:in `_app_views_users_index_html_erb___1028854053184866784_69842076569500'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:00:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    20: 				</div>
+    21: 				<div>
+    22: 					<!-- ログインじのみ編集できるようにする -->
+    23: 					<%= link_to "edit仮", edit_user_path(@user.id) %>
+    24: 				</div>
+    25: 			</div>
+    26: 
+  
+app/views/users/index.html.erb:23:in `_app_views_users_index_html_erb___1028854053184866784_69842079069340'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:00:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    55: 					<th>image</th> <th>name</th><th><th></th>
+    56: 				</tr>
+    57: 				<tr>
+    58: 					<td><%= attachment_image_tag @user, :profile_image, size: "50x50" %></td> <td><%= @user.name %></td> <td><%= link_to "show", user_path(@user.id) %></td>
+    59: 				</tr>
+    60: 			</table>
+    61: 		</div>
+  
+app/views/users/index.html.erb:58:in `_app_views_users_index_html_erb___1028854053184866784_36134800'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:01:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    55: 					<th>image</th> <th>name</th><th><th></th>
+    56: 				</tr>
+    57: 				<tr>
+    58: 					<td><%= attachment_image_tag @user, :profile_image, size: "50x50" %></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@user.id) %></td>
+    59: 				</tr>
+    60: 			</table>
+    61: 		</div>
+  
+app/views/users/index.html.erb:58:in `_app_views_users_index_html_erb___1028854053184866784_49780580'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:01:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x00007f0ac079a730>):
+    55: 					<th>image</th> <th>name</th><th><th></th>
+    56: 				</tr>
+    57: 				<tr>
+    58: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50" %></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    59: 				</tr>
+    60: 			</table>
+    61: 		</div>
+  
+app/views/users/index.html.erb:58:in `_app_views_users_index_html_erb___1028854053184866784_69842077797060'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:01:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x0000000004064240>):
+    55: 					<th>image</th> <th>name</th><th><th></th>
+    56: 				</tr>
+    57: 				<tr>
+    58: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50" %></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    59: 				</tr>
+    60: 			</table>
+    61: 		</div>
+  
+app/views/users/index.html.erb:58:in `_app_views_users_index_html_erb___1028854053184866784_33746040'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:05:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x0000000005808ae0>):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_46250580'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:05:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x00007f0ac003b868>):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_69842073932040'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:06:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x00007f0ac083d368>):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_69842078130420'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-05 12:06:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 918ms (Views: 850.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:06:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x000000000359d898>):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_28107660'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:09:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x00007f0ac25d3be8>):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_69842093643000'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:09:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x00007f0ac1684f20>):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_69842085605840'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:09:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<User::ActiveRecord_Relation:0x0000000006b41058>
+Did you mean?  ids):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					 <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 					 <!-- <td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> -->
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_56229700'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:09:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<User::ActiveRecord_Relation:0x00007f0ac1894978>
+Did you mean?  ids):
+    56: 					<th>image</th> <th>name</th><th><th></th>
+    57: 				</tr>
+    58: 				<tr>
+    59: 					 <td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    60: 					 <!-- <td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> -->
+    61: 				</tr>
+    62: 			</table>
+  
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___1028854053184866784_69842086678240'
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:12:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (30.9ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 3.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<User::ActiveRecord_Relation:0x00000000053e6930>
+Did you mean?  ids):
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<%= @users.each do |user| %>
+    60: 					 	<td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    61: 					 	<!-- <td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> -->
+    62: 					 <% end %>
+    63: 				</tr>
+  
+app/views/users/index.html.erb:60:in `block in _app_views_users_index_html_erb___3712213521865347501_43983160'
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___3712213521865347501_43983160'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:13:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<User::ActiveRecord_Relation:0x00007f221c8f70b0>
+Did you mean?  ids):
+    57: 				</tr>
+    58: 				<tr>
+    59: 					<%= @users.each do |user| %>
+    60: 					 	<td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.id) %></td>
+    61: 					 	<!-- <td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> -->
+    62: 					 <% end %>
+    63: 				</tr>
+  
+app/views/users/index.html.erb:60:in `block in _app_views_users_index_html_erb___3712213521865347501_69892242386820'
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___3712213521865347501_69892242386820'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:13:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x00000000039f3d70>):
+    58: 				<tr>
+    59: 					<%= @users.each do |user| %>
+    60: 					 	<td><%= @users.name %></td> <td><%= link_to "show", user_path(@users.ids) %></td>
+    61: 					 	<!-- <td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> -->
+    62: 					 <% end %>
+    63: 				</tr>
+    64: 			</table>
+  
+app/views/users/index.html.erb:61:in `block in _app_views_users_index_html_erb___3712213521865347501_30378720'
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___3712213521865347501_30378720'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:15:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_image' for #<User::ActiveRecord_Relation:0x00000000050f2558>):
+    58: 				<tr>
+    59: 					<%= @users.each do |user| %>
+    60: 					 	<td><%= user.name %></td> <td><%= link_to "show", user_path(user.id) %></td>
+    61: 					 	<!-- <td><%= attachment_image_tag @users, :profile_image, size: "50x50"%></td> -->
+    62: 					 <% end %>
+    63: 				</tr>
+    64: 			</table>
+  
+app/views/users/index.html.erb:61:in `block in _app_views_users_index_html_erb___3712213521865347501_42437040'
+app/views/users/index.html.erb:59:in `_app_views_users_index_html_erb___3712213521865347501_42437040'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:15:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 887ms (Views: 883.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:16:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 151ms (Views: 145.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:18:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 118ms (Views: 112.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:19:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 124ms (Views: 117.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 12:19:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 121ms (Views: 115.6ms | ActiveRecord: 1.2ms)
+
+

@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   root  "homes#top"
   get "homes/about" => "homes#about"
   #ルートまだshow edit できない表示されるルートがない
-  resources :users, only: [:index, :show]
+  resources :users, only: [:index, :show, :edit]
   resources :books, only: [:index, :create]
 end

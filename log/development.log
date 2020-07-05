@@ -186,3 +186,128 @@ Processing by BooksController#edit as HTML
 Completed 200 OK in 57ms (Views: 51.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/books/edit" for 10.0.2.2 at 2020-07-05 01:56:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#edit as HTML
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 573ms (Views: 561.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 01:56:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    12: </div>
+    13: 
+    14: <!-- book new -->
+    15: <%= form_for(@book) do |f| %>
+    16: 	<div>
+    17: 		<div>
+    18: 			<h1>New books</h1>
+  
+app/views/users/index.html.erb:15:in `_app_views_users_index_html_erb__1224553258587440247_70263886668800'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 01:56:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<ActiveRecord::Relation []>
+Did you mean?  to_set
+               to_ary):
+    12: </div>
+    13: 
+    14: <!-- book new -->
+    15: <%= form_for(@book) do |f| %>
+    16: 	<div>
+    17: 		<div>
+    18: 			<h1>New books</h1>
+  
+app/views/users/index.html.erb:15:in `_app_views_users_index_html_erb___1407402200681252395_70169869774880'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 01:56:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered users/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<ActiveRecord::Relation []>
+Did you mean?  to_set
+               to_ary):
+    12: </div>
+    13: 
+    14: <!-- book new -->
+    15: <%= form_for(@book) do |f| %>
+    16: 	<div>
+    17: 		<div>
+    18: 			<h1>New books</h1>
+  
+app/views/users/index.html.erb:15:in `_app_views_users_index_html_erb___1407402200681252395_70169900682840'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 02:00:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 592ms (Views: 536.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 02:02:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 317ms (Views: 288.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 02:04:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text' for #<Book:0x00007f3f2c022138>):
+    21: 		</div>
+    22: 		<div>
+    23: 			<h5>Opinion</h5>
+    24: 			<%= f.text_field :text %>
+    25: 		</div>
+    26: 	</div>
+    27: 
+  
+app/views/users/index.html.erb:24:in `block in _app_views_users_index_html_erb__3626281877855201932_69954648999480'
+app/views/users/index.html.erb:13:in `_app_views_users_index_html_erb__3626281877855201932_69954648999480'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 02:04:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 105ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+

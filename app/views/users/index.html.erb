@@ -1,2 +1,28 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+
+<!-- users index -->
+<div>
+	<h2>Users</h2>
+</div>
+
+<!-- user show -->
+<div>
+	<h2>User info</h2>
+</div>
+
+<!-- book new -->
+<%= form_for(@book) do |f| %>
+	<div>
+		<div>
+			<h2>New books</h2>
+		</div>
+		<div>
+			<h5>Title</h5>
+			<%= f.text_field :title %>
+		</div>
+		<div>
+			<h5>Opinion</h5>
+			<%= f.text_field :body %>
+		</div>
+	</div>
+
+<% end %>

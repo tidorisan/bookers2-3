@@ -11,4 +11,6 @@ class User < ApplicationRecord
   					# 　name 文字数制限 3~20
  #redfile メソット
  attachment :image
+ # モデル関連づけ
+ has_many :books, dependent: :destroy
 end

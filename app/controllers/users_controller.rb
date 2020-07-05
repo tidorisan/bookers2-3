@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 		# book new
 		@book = Book.new
 		# book userのsアクション
-		@user = User.find(params[:id])
+		@user = User.find(current_user.id)
 		@books = @user.books
 
 

@@ -15,3 +15,15 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body { padding-top: 70px; }
+
+navbar-inverse {
+    background-color: #222;
+    border-color: #090909;
+}
+
+.container .navbar-left .title {
+	color: white;
+	font-size: 20px;
+}

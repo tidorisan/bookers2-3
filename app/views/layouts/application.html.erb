@@ -10,6 +10,44 @@
   </head>
 
   <body>
+    <!-- header -->
+    <header id="header">
+
+      <nav class="navbar navbar-fixed-top navbar-inverse" >
+        <div class="container">
+          <div class="nav navber-nav navbar-left">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample">
+            </button>
+            <span class="title">Bookers</span>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarEexample">
+            <ul class="nav navbar-nav navbar-right">
+              <% if user_signed_in? %>
+              <!-- なんかurlの表示がおかしい -->
+                <li><a href=user_path(current_user.id) class="glyphicon glyphicon-home">  Home</a></li>
+
+                <li><a href=users class="glyphicon glyphicon-user">  Users</a></li>
+                <li><a href=books class="glyphicon glyphicon-book">  Books</a></li>
+                <!-- ログアウトできない -->
+                <!-- まだログアウト機能作ってない -->
+                <li><a href=destroy_user_session class="glyphicon glyphicon-share">  logout</a></li>
+              <% else %>
+              <!-- ログアウトっできたら確認する -->
+              <!-- やりかたチェック -->
+                <li><a href=user_path(current_user.id) class="glyphicon glyphicon-home">  Home</a></li>
+                <li><a href=homes_about class="glyphicon glyphicon-user">  About</a></li>
+                <li><a href=new_user_registration class="glyphicon glyphicon-edit">  sign up</a></li>
+                <li><a href=new_user_sessio class="glyphicon glyphicon-log-in">  logoin</a></li>
+
+              <% end %>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header><!-- /header -->
     <%= yield %>
   </body>
 </html>

@@ -2249,6 +2249,13 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 62ms (Views: 52.5ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-07-05 08:59:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/users/1/edit"):
+  
 actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
@@ -2276,7 +2283,17 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      :33:in `call'
+Started GET "/users/show/edit" for 10.0.2.2 at 2020-07-05 09:00:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/show/edit"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
 railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
 railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
 activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
@@ -2427,21 +2444,43 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-app/controllers/users_controller.rb:33: syntax error, unexpected ',', expecting keyword_end
-ror, unexpected ',', expecting keyword_end
+Started PATCH "/users/1" for 10.0.2.2 at 2020-07-05 09:32:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/users_controller.rb:33: syntax error, unexpected ',', expecting keyword_end
 		params.require(:user),permit(:name, :profile_image,...
 		                     ^):
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    app/controllers/users_controller.rb:28:in `update'
-hes {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
-"."id" = ?[0m  [["profile_image_id", "7a5d96658c607e6d451d4b53f30255686a6e25ef2fcdf84a1fc09525bbf0"], ["introduction", "こんにちわ"], ["updated_at", "2020-07-05 09:35:00.619088"], ["id", 1]]
-="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "introduction"=>"こんにちわ"}, "commit"=>"Update User", "id"=>"1"}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Completed 200 OK in 402ms (Views: 378.0ms | ActiveRecord: 2.4ms)
+  
+app/controllers/users_controller.rb:33: syntax error, unexpected ',', expecting keyword_end
+Started PATCH "/users/1" for 10.0.2.2 at 2020-07-05 09:35:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vf920nBEYkse99Xcjm4Q1//xQIOHe2+2rJZ66ixU/H8b/RSIKFhUVq1tqwdHGoGLsIKrC8UuCKrvyUQXNB+oUA==", "user"=>{"name"=>"natsumerika", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f05a4515b70 @tempfile=#<Tempfile:/tmp/RackMultipart20200705-28150-m2c3nw.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "introduction"=>"こんにちわ"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Update (3.0ms)[0m  [1m[33mUPDATE "users" SET "profile_image_id" = ?, "introduction" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["profile_image_id", "7a5d96658c607e6d451d4b53f30255686a6e25ef2fcdf84a1fc09525bbf0"], ["introduction", "こんにちわ"], ["updated_at", "2020-07-05 09:35:00.619088"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 8.3ms)
 
 
-ooks" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
-"LIMIT", 1]]
-profile_image_id", "91bd3ee138fdf054ae171133b838a01bcb0a6b8a2256755ade0f96762bb2"], ["updated_at", "2020-07-05 09:36:02.426998"], ["id", 1]]
-ckMultipart20200705-28205-xfhpqk.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\20nBEYkse99Xcjm4Q1//xQIOHe2+2rJZ66ixU/H8b/RSIKFhUVq1tqwdHGoGLsIKrC8UuCKrvyUQXNB+oUA==", "user"=>{"name"=>"natsumerika", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd42c515fd8 @tempfile=#<Tempfile:/tmp/RackMultipart20200705-28205-xfhpqk.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "introduction"=>"こんにちわ"}, "commit"=>"Update User", "id"=>"1"}
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:28:in `update'
+Started PATCH "/users/1" for 10.0.2.2 at 2020-07-05 09:36:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vf920nBEYkse99Xcjm4Q1//xQIOHe2+2rJZ66ixU/H8b/RSIKFhUVq1tqwdHGoGLsIKrC8UuCKrvyUQXNB+oUA==", "user"=>{"name"=>"natsumerika", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd42c515fd8 @tempfile=#<Tempfile:/tmp/RackMultipart20200705-28205-xfhpqk.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "introduction"=>"こんにちわ"}, "commit"=>"Update User", "id"=>"1"}
   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/users_controller.rb:26
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
@@ -2467,19 +2506,25 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 402ms (Views: 378.0ms | ActiveRecord: 2.4ms)
 
 
-Completed 200 OK in 85ms (Views: 77.6ms | ActiveRecord: 1.0ms)
-
-
-
-books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
- 1], ["LIMIT", 1]]
- 100, 100, format: 'jpeg' %>
-    11: 	</div>
-    12: 	<div>
-    13: 		<p>name @user:name</p>
-ofile_image_id=
-               profile_image_url):
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Started GET "/users/1" for 10.0.2.2 at 2020-07-05 09:53:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
   [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
   ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
   [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
@@ -2951,11 +2996,12 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.0ms)
 
 
-Completed 200 OK in 157ms (Views: 147.2ms | ActiveRecord: 0.5ms)
-
-
-users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   T", 1]]
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 10:44:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/users_controller.rb:4
   Rendering users/index.html.erb within layouts/application
   Rendered users/index.html.erb within layouts/application (6.5ms)
@@ -3092,10 +3138,8 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 157ms (Views: 147.2ms | ActiveRecord: 0.5ms)
 
 
-Completed 200 OK in 800ms (Views: 791.6ms | ActiveRecord: 0.6ms)
-
-
-users" WHEREonsole from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 11:33:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
 Processing by UsersController#index as HTML
@@ -3705,5 +3749,1139 @@ Processing by UsersController#index as HTML
   ↳ app/views/users/index.html.erb:59
   Rendered users/index.html.erb within layouts/application (7.7ms)
 Completed 200 OK in 121ms (Views: 115.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:06:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 897ms (Views: 870.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:23:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 2768ms (Views: 2741.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:26:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 2154ms (Views: 2147.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:27:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 132ms (Views: 123.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:28:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 118ms (Views: 110.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:31:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 162ms (Views: 156.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:38:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 1151ms (Views: 1124.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/user_path" for 10.0.2.2 at 2020-07-05 13:38:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"user_path"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 7ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:39:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 127ms (Views: 118.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/user_path" for 10.0.2.2 at 2020-07-05 13:39:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"user_path"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 5ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:40:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 118ms (Views: 111.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 13:40:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 5ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path(current_user):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:43:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 116ms (Views: 108.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:43:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 2226ms (Views: 2220.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:44:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 158ms (Views: 150.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:46:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 2043ms (Views: 2037.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:47:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (101.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (111.4ms)
+Completed 200 OK in 2648ms (Views: 2535.5ms | ActiveRecord: 104.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:49:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (74.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (79.4ms)
+Completed 200 OK in 2289ms (Views: 2208.5ms | ActiveRecord: 74.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:49:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "	font-size": expected ";", was ": 20px;"):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.scss:29
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__9921714491091829_70205671447180'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:50:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 2671ms (Views: 2666.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:50:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 1934ms (Views: 1916.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:51:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (19.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (188.7ms)
+Completed 200 OK in 652ms (Views: 587.0ms | ActiveRecord: 22.2ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:52:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 269ms (Views: 234.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:54:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 327ms (Views: 320.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:54:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 195ms (Views: 190.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:59:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 422ms (Views: 413.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:59:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 187ms (Views: 181.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 13:59:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 172ms (Views: 164.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:00:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 146ms (Views: 140.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:01:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 392ms (Views: 377.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:03:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 156ms (Views: 148.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:09:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 122ms (Views: 115.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:09:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 113ms (Views: 107.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:09:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 158ms (Views: 152.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:10:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 1260ms (Views: 1220.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/user_path(curent_user.id)" for 10.0.2.2 at 2020-07-05 14:11:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(curent_user"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 5ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path(curent_user):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/user_path(curent_user.id)" for 10.0.2.2 at 2020-07-05 14:12:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(curent_user"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 4ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path(curent_user):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-05 14:14:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 239ms (Views: 197.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-07-05 14:14:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 153ms (Views: 139.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/user_path(curent_user.id)" for 10.0.2.2 at 2020-07-05 14:16:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(curent_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path(curent_user):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:18:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 130ms (Views: 123.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:18:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 5ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path(current_user):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:18:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Completed 404 Not Found in 5ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_path(current_user):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:19:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 4.6ms)
+
+
+  
+ArgumentError (You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`.):
+  
+app/controllers/users_controller.rb:19:in `show'
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:20:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 848ms (Views: 760.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:20:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 171ms (Views: 132.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 256ms (Views: 204.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:21:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 236ms (Views: 187.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:22:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 921ms (Views: 799.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:22:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 112ms (Views: 105.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:23:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 204ms (Views: 163.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:23:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 184ms (Views: 144.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/users" for 10.0.2.2 at 2020-07-05 14:24:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 116ms (Views: 106.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/users" for 10.0.2.2 at 2020-07-05 14:24:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 102ms (Views: 92.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 253ms (Views: 193.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/users" for 10.0.2.2 at 2020-07-05 14:25:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 106ms (Views: 96.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/users" for 10.0.2.2 at 2020-07-05 14:25:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 117ms (Views: 105.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/users" for 10.0.2.2 at 2020-07-05 14:25:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 145ms (Views: 136.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:25:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 128ms (Views: 116.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:25:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 105ms (Views: 95.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:25:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 180ms (Views: 141.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:25:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (1.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 133ms (Views: 121.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:25:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 111ms (Views: 103.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/users" for 10.0.2.2 at 2020-07-05 14:25:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 119ms (Views: 108.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:25:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 157ms (Views: 126.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:26:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 115ms (Views: 105.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:26:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 104ms (Views: 96.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/root" for 10.0.2.2 at 2020-07-05 14:26:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"root"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 129ms (Views: 118.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/books" for 10.0.2.2 at 2020-07-05 14:26:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"books"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 103ms (Views: 93.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/root" for 10.0.2.2 at 2020-07-05 14:26:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"root"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 116ms (Views: 107.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/root" for 10.0.2.2 at 2020-07-05 14:26:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"root"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 107ms (Views: 98.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/root" for 10.0.2.2 at 2020-07-05 14:27:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"root"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 131ms (Views: 116.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/homes" for 10.0.2.2 at 2020-07-05 14:27:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"homes"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 117ms (Views: 109.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/user_path(current_user.id)" for 10.0.2.2 at 2020-07-05 14:27:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  Parameters: {"id"=>"user_path(current_user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 186ms (Views: 145.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/homes" for 10.0.2.2 at 2020-07-05 14:32:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"homes"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 114ms (Views: 104.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/homes" for 10.0.2.2 at 2020-07-05 14:37:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"homes"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 164ms (Views: 154.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/destroy_user_session" for 10.0.2.2 at 2020-07-05 14:37:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"destroy_user_session"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 114ms (Views: 104.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/destroy_user_session" for 10.0.2.2 at 2020-07-05 14:37:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"destroy_user_session"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 99ms (Views: 90.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/destroy_user_session" for 10.0.2.2 at 2020-07-05 14:37:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"destroy_user_session"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 120ms (Views: 110.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/destroy_user_session" for 10.0.2.2 at 2020-07-05 14:37:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"destroy_user_session"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 143ms (Views: 128.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-07-05 14:38:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:59
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 114ms (Views: 106.6ms | ActiveRecord: 0.9ms)
 
 

@@ -1,0 +1,34 @@
+<h2>Sign up</h2>
+
+<!-- とりあえず文章だけは完成 -->
+<!-- できていないこと　 -->
+<!-- バリデーション チェック
+リンク機能
+
+ -->
+<!--デフォルトで記載されたもの  -->
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+  <!-- 項目 -->
+  <h4>name</h4>
+  <%= f.text_field :name %>
+
+  <h4>Email</h4>
+  <%= f.email_field :email %>
+
+  <h4>Password (6 characters minimum)</h4>
+  <%= f.password_field :password %>
+
+
+  <h4>Password confirmation</h4>
+  <%= f.password_field :password_confirmation %>
+
+  <div>
+    <%= f.submit "sign in"  %>
+  </div>
+
+  <!-- url 確認する -->
+  <%= link_to "Log in", "user/log_in" %>
+
+
+<% end %>

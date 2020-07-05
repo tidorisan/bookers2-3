@@ -2,16 +2,22 @@
 
 <!-- showページ範囲がない -->
 <!-- avtion @user = User.find(params[:id]) -->
+<!-- ログインしている自分のやつを表示 -->
 <div>
 	<h2>User info</h2>
 	<div>
-		<p>profile_image_id</p>
+		<!-- sixe使用 -->
+		<%= attachment_image_tag @user, :profile_image, size: "100x100"%>
 	</div>
 	<div>
-		<p>name @user:name</p>
+		<p>name　　<%= @user.name %></p>
 	</div>
 	<div>
-		<p>introduction @user:introduction</p>
+		<p>introduction　　<%= @user.introduction %></p>
+	</div>
+	<div>
+		<!-- ログインじのみ編集できるようにする -->
+		<%= link_to "edit仮", edit_user_path(@user.id) %>
 	</div>
 </div>
 

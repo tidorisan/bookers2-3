@@ -1,19 +1,24 @@
 
 <!-- user show -->
-<!-- showページ範囲がない -->
-<!-- avtion @user = User.find(params[:id]) -->
+<!-- @user = current_user 現在ログインしているユーザのみ-->
 <div>
 	<h2>User info</h2>
 	<div>
-		<p>profile_image_id</p>
+		<!-- sixe使用 -->
+		<%= attachment_image_tag @user, :profile_image, size: "100x100"%>
 	</div>
 	<div>
-		<p>name @user:name</p>
+		<p>name　　<%= @user.name %></p>
 	</div>
 	<div>
-		<p>introduction @user:introduction</p>
+		<p>introduction　　<%= @user.introduction %></p>
+	</div>
+	<div>
+		<!-- ログインじのみ編集できるようにする -->
+		<%= link_to "edit仮", edit_user_path(@user.id) %>
 	</div>
 </div>
+
 
 <!-- book new -->
 <%= form_for(@book) do |f| %>
@@ -46,7 +51,7 @@
 			<th>image</th> <th>name</th>
 		</tr>
 		<tr>
-			<td>@user.image</td> <td>@user.name</td> <td>link_to "show", url</td>
+			<td>@user.image</td> <td>@user.name</td> <td><%= link_to "show", user_path(@user.id) %></td>
 		</tr>
 	</table>
 </div>

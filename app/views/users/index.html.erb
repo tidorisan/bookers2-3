@@ -1,12 +1,18 @@
 
-<!-- users index -->
-<div>
-	<h2>Users</h2>
-</div>
-
 <!-- user show -->
+<!-- showページ範囲がない -->
+<!-- avtion @user = User.find(params[:id]) -->
 <div>
 	<h2>User info</h2>
+	<div>
+		<p>profile_image_id</p>
+	</div>
+	<div>
+		<p>name @user:name</p>
+	</div>
+	<div>
+		<p>introduction @user:introduction</p>
+	</div>
 </div>
 
 <!-- book new -->
@@ -23,6 +29,30 @@
 			<h5>Opinion</h5>
 			<%= f.text_field :body %>
 		</div>
+		<div>
+			<%= f.submit "Create Book" %>
+		</div>
 	</div>
+<% end %>
+
+<!-- users index -->
+<!--
+<%= @users.each do |user| %>
 
 <% end %>
+ -->
+<div>
+	<h2>Users</h2>
+</div>
+<div>
+	<table>
+		<tr>
+			<th>image</th> <th>name</th>
+		</tr>
+		<tr>
+			<td>@user.image</td> <td>@user.name</td> <td>link_to "show", url</td>
+		</tr>
+	</table>
+</div>
+
+<p>CopyRight Infratop.inc</p>

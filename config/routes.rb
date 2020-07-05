@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'books/index'
+  get 'books/show'
+  get 'books/edit'
   get 'users/index'
   get 'users/show'
   get 'users/edit'
@@ -8,5 +11,7 @@ Rails.application.routes.draw do
   # homes controller
   root  "homes#top"
   get "homes/about" => "homes#about"
+  #ルートまだshow edit できない表示されるルートがない
   resources :users, only: [:index]
+  resources :books, only: [:index]
 end

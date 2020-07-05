@@ -2427,3 +2427,43 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+app/controllers/users_controller.rb:33: syntax error, unexpected ',', expecting keyword_end
+ror, unexpected ',', expecting keyword_end
+		params.require(:user),permit(:name, :profile_image,...
+		                     ^):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    app/controllers/users_controller.rb:28:in `update'
+hes {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+"."id" = ?[0m  [["profile_image_id", "7a5d96658c607e6d451d4b53f30255686a6e25ef2fcdf84a1fc09525bbf0"], ["introduction", "こんにちわ"], ["updated_at", "2020-07-05 09:35:00.619088"], ["id", 1]]
+="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "introduction"=>"こんにちわ"}, "commit"=>"Update User", "id"=>"1"}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Completed 200 OK in 402ms (Views: 378.0ms | ActiveRecord: 2.4ms)
+
+
+ooks" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+"LIMIT", 1]]
+profile_image_id", "91bd3ee138fdf054ae171133b838a01bcb0a6b8a2256755ade0f96762bb2"], ["updated_at", "2020-07-05 09:36:02.426998"], ["id", 1]]
+ckMultipart20200705-28205-xfhpqk.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\20nBEYkse99Xcjm4Q1//xQIOHe2+2rJZ66ixU/H8b/RSIKFhUVq1tqwdHGoGLsIKrC8UuCKrvyUQXNB+oUA==", "user"=>{"name"=>"natsumerika", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd42c515fd8 @tempfile=#<Tempfile:/tmp/RackMultipart20200705-28205-xfhpqk.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "introduction"=>"こんにちわ"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Update (1.8ms)[0m  [1m[33mUPDATE "users" SET "profile_image_id" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["profile_image_id", "91bd3ee138fdf054ae171133b838a01bcb0a6b8a2256755ade0f96762bb2"], ["updated_at", "2020-07-05 09:36:02.426998"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 43ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-07-05 09:36:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 402ms (Views: 378.0ms | ActiveRecord: 2.4ms)
+
+

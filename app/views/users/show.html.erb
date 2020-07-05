@@ -1,2 +1,58 @@
 <h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+
+<!-- showページ範囲がない -->
+<!-- avtion @user = User.find(params[:id]) -->
+<div>
+	<h2>User info</h2>
+	<div>
+		<p>profile_image_id</p>
+	</div>
+	<div>
+		<p>name @user:name</p>
+	</div>
+	<div>
+		<p>introduction @user:introduction</p>
+	</div>
+</div>
+
+<!-- book new -->
+<%= form_for(@book) do |f| %>
+	<div>
+		<div>
+			<h2>New books</h2>
+		</div>
+		<div>
+			<h5>Title</h5>
+			<%= f.text_field :title %>
+		</div>
+		<div>
+			<h5>Opinion</h5>
+			<%= f.text_field :body %>
+		</div>
+		<div>
+			<%= f.submit "Create Book" %>
+		</div>
+	</div>
+<% end %>
+
+<!-- users books 関係ある -->
+<!-- 範囲は書かない　マイページ　関係づけ-->
+<div>
+	<h2>Books</h2>
+</div>
+
+
+<div>
+	<table>
+		<tr>
+			<th>Title</th> <th>Opinion</th>
+		</tr>
+		<% @books.each do |book| %>
+			<tr>
+				<td><%= book.title %></td> <td><%= book.body %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>
+
+	<p>CopyRight Infratop.inc</p>

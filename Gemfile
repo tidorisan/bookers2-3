@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # こっからdivese/refile
 gem 'devise'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "pry-rails"

@@ -10,7 +10,7 @@ class User < ApplicationRecord
   					length: { minimum: 2, maximum: 20 }
   					# 　name 文字数制限 3~20
  #redfile メソット
- attachment :image
+ attachment :profile_image
  # モデル関連づけ
  has_many :books, dependent: :destroy
 end

@@ -23,7 +23,14 @@
 				</table>
 				<div>
 					<!-- ログインじのみ編集できるようにする -->
-					<%= link_to "", edit_user_path(current_user.id), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench" %>
+					<!-- if もしログインしていたら -->
+					<% if user_signed_in? %>
+						<%= link_to "", edit_user_path(current_user.id), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench" %>
+					<!-- していなかったら -->
+					<% else %>
+						<%= link_to "", user_path(current_user.id), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench" %>
+					<% end %>
+					<!-- ここまで -->
 				</div>
 			</div>
 

@@ -9,13 +9,19 @@ class BooksController < ApplicationController
   end
 
   def create
-  	# book.newのためのcreate記述
-  	book = Book.new(book_params)
+    # book.newのためのcreate記述
+    book = Book.new(book_params)
     book.user_id = current_user.id
-    book.save
-    # showができていないので
-    redirect_to book_path(book.id)
-    # booknewここまで
+    # エラーメッセージ　サクセスメッセージ
+    if book.save
+      # showができていないので
+      flash[:notice] = "successfully"
+      redirect_to book_path(book.id)
+    else
+      # book new
+      flash[:notice] = "error"
+      redirect_to books_path
+    end
   end
 
 

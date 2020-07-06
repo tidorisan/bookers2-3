@@ -30,8 +30,14 @@ class UsersController < ApplicationController
 	def update
 		# 注意　updateだがインスタンス変数
 		@user = User.find(params[:id])
-		@user.update(user_params)
-		redirect_to user_path(@user.id)
+		# エラーメッセージ　サクセスメッセージ
+		if @user.update(user_params)
+			flash[:notice] = "successfully"
+			redirect_to user_path(@user.id)
+		else
+			flash[:notice] = "error"
+			render = edit_user_path
+		end
 	end
 
 	private

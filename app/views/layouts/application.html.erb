@@ -54,6 +54,14 @@
       </nav>
 
     </header><!-- /header -->
+    <!-- エラー　サクセスメッセージ -->
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+
+    <!-- ここまで -->
     <%= yield %>
   </body>
 </html>

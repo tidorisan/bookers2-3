@@ -11,13 +11,6 @@ class ApplicationController < ActionController::Base
 	def configure_permitted_parameters
   		devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :email])
   	end
-
 	# ログインしていないと どの画面も表示されない　ログイン画面へのリダイレクト
 	 before_action :authenticate_user!
-	 # エラー　サクセスメッセージ
-	 # user name
-	 validates :name, presence:  true
-	 				length: { minmum:2, maximum: 8 }
-	 			:introduction, length: { maximum: 50 }
-	 validates :
 end

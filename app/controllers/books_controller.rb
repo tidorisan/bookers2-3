@@ -24,9 +24,9 @@ class BooksController < ApplicationController
     @book = Book.new
     # book show detail
     # エラーの原因
-    @user = User.find(params[:id])
     # @bookで重複避ける
     @books = Book.find(params[:id])
+    @user = @books.user
   end
 
   def edit

@@ -11130,3 +11130,313 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 113ms (Views: 101.7ms | ActiveRecord: 1.5ms)
 
 
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keywordm  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:17:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-07-06 11:17:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:19:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:19:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:19:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:19:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:20:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:20:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+	 			:introduction, length: { maximum: 50 }
+	 			             ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:20:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:21:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+	 			:body, presence: true,
+	 			     ^
+/home/vagrant/work/bookers2-3/app/controllers/application_controller.rb:25: Can't assign to true
+	 			:body, presence: true,
+	 			                     ^):
+  
+app/controllers/application_controller.rb:25: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:25: Can't assign to true
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:21:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `validates' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:19:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:21:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `validates' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:19:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:21:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `validates' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:19:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-07-06 11:22:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `validates' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:19:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:29:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined method `validates' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:19:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-07-06 11:29:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `validates' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:19:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-07-06 11:41:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 837ms (Views: 805.4ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/users/1" for 10.0.2.2 at 2020-07-06 11:41:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"irHm3l4JdjHUgvvwgDCnlAht/xlqSHKWorAlm+EImWh0QG5fNQ1Hrfi0HYtVJQKrnLDJqdUZvlzvx76E2rEL9A==", "user"=>{"name"=>"natsumerika", "profile_image"=>"{}", "introduction"=>""}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:34
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "profile_image_id" = ?, "introduction" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["profile_image_id", "91bd3ee138fdf054ae171133b838a01bcb0a6b8a2256755ade0f96762bb2"], ["introduction", ""], ["updated_at", "2020-07-06 11:41:17.080294"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:34
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:34
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 15ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:41:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:62
+  Rendered users/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 187ms (Views: 162.8ms | ActiveRecord: 3.5ms)
+
+
+Started PATCH "/users/1" for 10.0.2.2 at 2020-07-06 11:41:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"irHm3l4JdjHUgvvwgDCnlAht/xlqSHKWorAlm+EImWh0QG5fNQ1Hrfi0HYtVJQKrnLDJqdUZvlzvx76E2rEL9A==", "user"=>{"name"=>"natsumerika", "profile_image"=>"{}", "introduction"=>"こんにちわ＿s"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:34
+  [1m[36mUser Update (1.8ms)[0m  [1m[33mUPDATE "users" SET "profile_image_id" = ?, "introduction" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["profile_image_id", "91bd3ee138fdf054ae171133b838a01bcb0a6b8a2256755ade0f96762bb2"], ["introduction", "こんにちわ＿s"], ["updated_at", "2020-07-06 11:41:36.988472"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:34
+  [1m[35m (42.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:34
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 57ms (ActiveRecord: 45.6ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-07-06 11:41:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:62
+  Rendered users/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 160ms (Views: 152.0ms | ActiveRecord: 1.8ms)
+
+

@@ -4,13 +4,16 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   # バリデーション チェック
-  # sign in
+  # user name
   validates :name, presence: true,
   					# name 空白　error
   					length: { minimum: 2, maximum: 20 }
-  					# 　name 文字数制限 3~20
- #redfile メソット
- attachment :profile_image
- # モデル関連づけ
- has_many :books, dependent: :destroy
+  					# 　name 文字数制限 2~20
+  #user introduction
+  validates :introduction, length: { maximum: 50 }
+  # バリデーション チェックここまで
+  #redfile メソット
+  attachment :profile_image
+  # モデル関連づけ
+  has_many :books, dependent: :destroy
 end

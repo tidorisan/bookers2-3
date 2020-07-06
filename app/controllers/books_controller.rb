@@ -9,7 +9,6 @@ class BooksController < ApplicationController
   end
 
   def create
-  	# binding.pry
   	# book.newのためのcreate記述
   	book = Book.new(book_params)
     book.user_id = current_user.id
@@ -24,6 +23,7 @@ class BooksController < ApplicationController
     # book new
     @book = Book.new
     # book show detail
+    # エラーの原因
     @user = User.find(params[:id])
     # @bookで重複避ける
     @books = Book.find(params[:id])

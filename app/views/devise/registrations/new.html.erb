@@ -1,12 +1,9 @@
 <h2>Sign up</h2>
 
-<!-- とりあえず文章だけは完成 -->
-<!-- できていないこと　 -->
-<!-- バリデーション チェック
-リンク機能
-
- -->
-<!--デフォルトで記載されたもの  -->
+  <!-- とりあえず文章だけは完成 -->
+  <!-- できていないこと　 -->
+  <!-- バリデーション チェックリンク機能-->
+  <!--デフォルトで記載されたもの  -->
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
   <!-- 項目 -->
@@ -28,7 +25,7 @@
   </div>
 
   <!-- url 確認する -->
-  <%= link_to "Log in", "user/log_in" %>
+  <%= link_to "Log in", new_user_session_path %>
 
 
 <% end %>

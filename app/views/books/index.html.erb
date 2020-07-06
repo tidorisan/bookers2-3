@@ -1,5 +1,5 @@
 
-<!-- users index -->
+<!-- books index -->
 <!-- -->
 <div class="container">
 	<div class="row">
@@ -46,28 +46,33 @@
 					</div>
 				</div>
 			<% end %>
-
-
 		</div>
 		<!-- book index @books =Book.all-->
 		<div class="col-md-9">
 			<h2>Books</h2>
 			<table class="table">
-				<tr>
-					<th></th>
-					<th>Title</th>
-					<th>Option</th><th>
-					<th colspan="3"></th>
-				</tr>
-				<tr>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Title</th>
+						<th>Option</th><th>
+						<th colspan="3"></th>
+					</tr>
+				</thead>
+				<tbody>
 					<% @books.each do |book|%>
-					<!-- book indexで表示されたものにuser modelからattachment_imageを取得したい -->
-					<!-- この記述で正しいのか -->
-						<td><%= attachment_image_tag book.user, :profile_image, size: "50x50"%></td>
-						<td><%= book.title %></td>
-						<td><%= book.body %></td>
+					<!-- trをeachで挟む -->
+						<tr>
+
+							<!-- book indexで表示されたものにuser 		modelからattachment_imageを取得したい -->
+							<!-- この記述で正しいのか -->
+							<td><%= attachment_image_tag book.user, :profile_image, size: "50x50"%></td>
+							<td><%= book.title %></td>
+							<td><%= book.body %></td>
+
+						</tr>
 					<% end %>
-				</tr>
+				</tbody>
 			</table>
 		</div>
 	</div>

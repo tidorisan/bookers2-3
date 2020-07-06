@@ -10,15 +10,16 @@
 				<h2>User info</h2>
 				<div>
 					<!-- sixe使用 -->
-					<%= attachment_image_tag current_user, :profile_image, size: "100x100" %>
+					<!-- 変更する -->
+					<%= attachment_image_tag @user, :profile_image, size: "100x100" %>
 				</div>
 				<table class="table">
 						<tr>
 							<th>name</th>
-							<th><%= current_user.name %></th>
+							<th><%= @user.name %></th>
 						</tr>
 						<tr>
-							<th>introduction</th><th><%= current_user.introduction %></th>
+							<th>introduction</th><th><%= @user.introduction %></th>
 						</tr>
 				</table>
 				<div>
@@ -52,15 +53,20 @@
 		<div class="col-md-9">
 			<h2>Book detail</h2>
 			<table class="table">
-				<tr>
-					<!-- 関連づけられたmodel から一つのカラムを取得する -->
-					<td><%= attachment_image_tag @books.user, :profile_image, size: "50x50"%></td>
-					<td><%= @books.title %></td>
-					<td><%= @books.body %></td>
-					<!-- ログインしているユーザが投稿者だった場合のみ表示 -->
-					<td><%= link_to "Edit", edit_book_path(@books.id), class: "btn-sm btn-success" %></td>
-					<td><%= link_to "Destroy", book_path(@books.id), method: :delete, class: "btn-sm btn-danger", "date-conform" => "本当に消しますか" %></td>
-				</tr>
+				<tbody>
+					<tr>
+						<!-- 関連づけられたmodel から一つのカラムを取得する -->
+						<td><%= attachment_image_tag @user, :profile_image, size: "50x50"%></td>
+						<td><%= @books.title %></td>
+						<td><%= @books.body %></td>
+						<!-- ログインしているユーザが投稿者だった場合のみ表示 -->
+						<% if user_signed_in? %>
+							<td><%= link_to "Edit", edit_book_path(@books.id), class: "btn-sm btn-success" %></td>
+							<td><%= link_to "Destroy", book_path(@books.id), method: :delete, class: "btn-sm btn-danger", "date-conform" => "本当に消しますか" %></td>
+
+						<% end %>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	</div>

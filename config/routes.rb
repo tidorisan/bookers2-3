@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   get "homes/about" => "homes#about"
   #ルートまだshow edit できない表示されるルートがない
   resources :users, only: [:index, :show, :edit, :update]
-  resources :books, only: [:index, :create]
+  resources :books, only: [:index, :create, :show, :edit, :destroy]
 end

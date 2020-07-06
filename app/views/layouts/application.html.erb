@@ -25,21 +25,27 @@
             <ul class="nav navbar-nav navbar-right">
               <% if user_signed_in? %>
               <!-- なんかurlの表示がおかしい -->
-                <li><a href=user_path(current_user.id) class="glyphicon glyphicon-home">  Home</a></li>
-
-                <li><a href=users class="glyphicon glyphicon-user">  Users</a></li>
-                <li><a href=books class="glyphicon glyphicon-book">  Books</a></li>
+                <li><%= link_to "  Home", user_path(current_user.id), class: "glyphicon glyphicon-home" %>
+                </li>
+                <li><%= link_to "  Users", users_path, class: "glyphicon glyphicon-book" %>
+                </li>
+                <li><%= link_to "  Books", books_path, class: "glyphicon glyphicon-book" %>
+                </li>
                 <!-- ログアウトできない -->
                 <!-- まだログアウト機能作ってない -->
-                <li><a href=destroy_user_session class="glyphicon glyphicon-share">  logout</a></li>
+                <li><%= link_to "  logout", destroy_user_session_path,  class: "glyphicon glyphicon-share" %>
+                </li>
               <% else %>
               <!-- ログアウトっできたら確認する -->
               <!-- やりかたチェック -->
-                <li><a href=user_path(current_user.id) class="glyphicon glyphicon-home">  Home</a></li>
-                <li><a href=homes_about class="glyphicon glyphicon-user">  About</a></li>
-                <li><a href=new_user_registration class="glyphicon glyphicon-edit">  sign up</a></li>
-                <li><a href=new_user_sessio class="glyphicon glyphicon-log-in">  logoin</a></li>
-
+                <li><%= link_to "  Home", user_path(current_user.id), class: "glyphicon glyphicon-home" %>
+                </li>
+                <li><%= link_to "   About", homes_about_path, class: "glyphicon glyphicon-user" %>
+                </li>
+                <li><%= link_to "  sing up",  new_user_registration_path, class: "glyphicon glyphicon-edit"  %>
+                </li>
+                <li><%= link_to "  login", new_user_session_path, class: "glyphicon glyphicon-log-in" %>
+                </li>
               <% end %>
 
             </ul>

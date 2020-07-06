@@ -12,10 +12,10 @@ class UsersController < ApplicationController
 	def show
 		# user show ログインしているユーザのみにする
 		# @user = User.find(params[:id])
-		@user = current_user
+		# @user = current_user
 		# book new
 		@book = Book.new
-		# book userのsアクション
+		# book index 関連づけ
 		@user = User.find(current_user.id)
 		@books = @user.books
 

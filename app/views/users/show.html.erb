@@ -1,64 +1,76 @@
-<h1>Users#show</h1>
 
-<!-- showページ範囲がない -->
-<!-- avtion @user = User.find(params[:id]) -->
-<!-- ログインしている自分のやつを表示 -->
-<div>
-	<h2>User info</h2>
-	<div>
-		<!-- sixe使用 -->
-		<%= attachment_image_tag @user, :profile_image, size: "100x100"%>
-	</div>
-	<div>
-		<p>name　　<%= @user.name %></p>
-	</div>
-	<div>
-		<p>introduction　　<%= @user.introduction %></p>
-	</div>
-	<div>
-		<!-- ログインじのみ編集できるようにする -->
-		<%= link_to "edit仮", edit_user_path(@user.id) %>
+<!-- users index -->
+<!-- -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<!-- user show -->
+			<!-- @user = current_user 現在ログインしているユーザのみ-->
+			<div>
+				<h2>User info</h2>
+				<div>
+					<!-- sixe使用 -->
+					<%= attachment_image_tag current_user, :profile_image, size: "100x100" %>
+				</div>
+				<table class="table">
+						<tr>
+							<th>name</th>
+							<th><%= current_user.name %></th>
+						</tr>
+						<tr>
+							<th>introduction</th><th><%= current_user.introduction %></th>
+						</tr>
+				</table>
+				<div>
+					<!-- ログインじのみ編集できるようにする -->
+					<%= link_to "", edit_user_path(current_user.id), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench" %>
+				</div>
+			</div>
+
+			<!-- book new -->
+			<%= form_for(@book) do |f| %>
+				<div>
+					<div>
+						<h2>New book</h2>
+					</div>
+					<div>
+						<h5>Title</h5>
+						<%= f.text_field :title, class: "col-xs-12" %>
+					</div>
+					<div>
+						<h5>Opinion</h5>
+						<%= f.text_field :body, class: "col-xs-12" %>
+					</div>
+					<div>
+						<%= f.submit "Create Book", class: "btn btn-primary col-xs-12" %>
+					</div>
+				</div>
+			<% end %>
+
+
+		</div>
+		<!-- users index @users =User.all-->
+		<div class="col-md-9">
+			<h2>Books</h2>
+			<table class="table　table-hover table-invers">
+				<tr>
+					<th></th>
+					<th>Title</th>
+					<th>Opinion</th><th>
+					<th colspan="3"></th>
+				</tr>
+				<tr>
+					<% @books.each do |book| %>
+					<!-- 関連づけたものから取得する -->
+					<!-- 表示おかしい -->
+						<td><%= attachment_image_tag @user, :profile_image, size: "50x50"%></td>
+						<!-- book showページ作ってリンク作る -->
+						<td><%= book.title %></td>
+						<td><%= book.body %></td>
+					<% end %>
+				</tr>
+			</table>
+		</div>
 	</div>
 </div>
 
-<!-- book new -->
-<%= form_for(@book) do |f| %>
-	<div>
-		<div>
-			<h2>New books</h2>
-		</div>
-		<div>
-			<h5>Title</h5>
-			<%= f.text_field :title %>
-		</div>
-		<div>
-			<h5>Opinion</h5>
-			<%= f.text_field :body %>
-		</div>
-		<div>
-			<%= f.submit "Create Book" %>
-		</div>
-	</div>
-<% end %>
-
-<!-- users books 関係ある -->
-<!-- 範囲は書かない　マイページ　関係づけ-->
-<div>
-	<h2>Books</h2>
-</div>
-
-
-<div>
-	<table>
-		<tr>
-			<th>Title</th> <th>Opinion</th>
-		</tr>
-		<% @books.each do |book| %>
-			<tr>
-				<td><%= book.title %></td> <td><%= book.body %></td>
-			</tr>
-		<% end %>
-	</table>
-</div>
-
-	<p>CopyRight Infratop.inc</p>

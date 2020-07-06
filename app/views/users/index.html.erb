@@ -12,15 +12,18 @@
 					<!-- sixe使用 -->
 					<%= attachment_image_tag current_user, :profile_image, size: "100x100" %>
 				</div>
-				<div>
-					<p>name　　<%= current_user.name %></p>
-				</div>
-				<div>
-					<p>introduction　　<%= current_user.introduction %></p>
-				</div>
+				<table class="table">
+						<tr>
+							<th>name</th>
+							<th><%= current_user.name %></th>
+						</tr>
+						<tr>
+							<th>introduction</th><th><%= current_user.introduction %></th>
+						</tr>
+				</table>
 				<div>
 					<!-- ログインじのみ編集できるようにする -->
-					<%= link_to "edit仮", edit_user_path(current_user.id) %>
+					<%= link_to "", edit_user_path(current_user.id), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench" %>
 				</div>
 			</div>
 
@@ -28,18 +31,18 @@
 			<%= form_for(@book) do |f| %>
 				<div>
 					<div>
-						<h2>New books</h2>
+						<h2>New book</h2>
 					</div>
 					<div>
 						<h5>Title</h5>
-						<%= f.text_field :title %>
+						<%= f.text_field :title, class: "col-xs-12" %>
 					</div>
 					<div>
 						<h5>Opinion</h5>
-						<%= f.text_field :body %>
+						<%= f.text_field :body, class: "col-xs-12" %>
 					</div>
 					<div>
-						<%= f.submit "Create Book" %>
+						<%= f.submit "Create Book", class: "btn btn-primary col-xs-12" %>
 					</div>
 				</div>
 			<% end %>
@@ -48,12 +51,11 @@
 		</div>
 		<!-- users index @users =User.all-->
 		<div class="col-md-9">
-			<div>
-				<h2>Users</h2>
-			</div>
-			<table class="table table-striped">
+			<h2>Users</h2>
+			<table class="table">
 				<tr>
-					<th>image</th> <th>name</th><th><th></th>
+					<th>image</th>
+					<th>name</th><th><th></th>
 				</tr>
 				<tr>
 					<% @users.each do |user|%>

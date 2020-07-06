@@ -1,17 +1,24 @@
 
-<h2>User info</h2>
+<div class="container">
+	<h2>User info</h2>
 
 <%= form_for(@user) do |f| %>
+	<div>
+		<!-- labelで記入する　pではない　横並び -->
+		<label for="name">Name</label>
+		<%= f.text_field :name %>
+	</div>
 
-	<p>Name</p><%= f.text_field :name %>
+	<div>
+		<label for="profile_image">Image</label>
+		<%= f.attachment_field :profile_image %>
+	</div>
 
-	<p>Image</p>
-	<%= f.attachment_field :profile_image %>
-
-	<p>Introduction</p><%= f.text_field :introduction %>
+	<div>
+		<label for="introduction">Introduction</label>
+		<%= f.text_field :introduction %>
+	</div>
 
 	<%= f.submit "Update User" %>
 
 <% end %>
-
-<p>CopyRight Infratop.inc</p>

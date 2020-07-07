@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-	# ログインしているユーザのみ編集
-	before_action :correct_user,   only: [:edit, :update]
+	# home画面に行かないいのどうするのか
+  	before_action :authenticate_user!, only: [:index, :show, :edit, :update]
+
 	def index
 		# user show ログインしているユーザのみにする
 		# 直接viewに書いたcurrent_user.name
@@ -17,36 +18,32 @@ class UsersController < ApplicationController
 		# book new
 		@book = Book.new
 		# book index 関連づけ
-		@user = User.find(current_user.id)
+		@user = User.find(params[:id])
 		@books = @user.books
 	end
 
 	def edit
-		# defore フィルターで重複するので
-		# @user = User.find(params[:id])
-	end
-
-	def update
-		# 注意　updateだがインスタンス変数
-		# defore フィルターで重複するので
-		# @user = User.find(params[:id])
-		# エラーメッセージ　サクセスメッセージ
-		if @user.update(user_params)
-			flash[:notice] = "successfully"
-			redirect_to user_path(@user.id)
-		else
-			flash[:notice] = "error"
-			render = edit_user_path
+		# もし現在のユーザ　が　@userでなかったら
+		@user = User.find(params[:id])
+		if current_user != @user
+			redirect_to user_path(current_user)
 		end
 	end
 
-	# defore フィルター
-	def correct_user
-		@user = Use.find(params[:id])
-		redirect_to(root_url) unless @user == current_user
-		# unless @user == current_user
-		# unless current_user?(@user)
+	def update
+		user = User.find(params[:id])
+		# @user = User.find(params[:id])
+		# エラーメッセージ　サクセスメッセージ
+		if user.update(user_params)
+			flash[:notice] = "successfully"
+			redirect_to user_path(user.id)
+		else
+			flash[:notice] = "error"
+			@user = user
+			render  "edit"
+		end
 	end
+
 
 	private
 	def user_params

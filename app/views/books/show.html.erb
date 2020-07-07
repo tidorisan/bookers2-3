@@ -3,7 +3,7 @@
 <!-- -->
 <div class="container">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-xs-3">
 			<!-- user show -->
 			<!-- @user = current_user 現在ログインしているユーザのみ-->
 			<div>
@@ -11,7 +11,7 @@
 				<div>
 					<!-- sixe使用 -->
 					<!-- 変更する -->
-					<%= attachment_image_tag @user, :profile_image, size: "100x100" %>
+					<%= attachment_image_tag @user, :profile_image, size: "100x100",fallback: "no_image.jpg" %>
 				</div>
 				<table class="table">
 						<tr>
@@ -24,13 +24,9 @@
 				</table>
 				<div>
 					<!-- ログインじのみ編集できるようにする -->
-					<!-- if もしログインしていたら -->
-					<% if user_signed_in? %>
+					<!-- 他人の投稿詳細画面の表示を確認 投稿の削除リンクが表示されない -->
 						<%= link_to "", edit_user_path(current_user.id), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench" %>
 					<!-- していなかったら -->
-					<% else %>
-						<%= link_to "", user_path(current_user.id), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench" %>
-					<% end %>
 					<!-- ここまで -->
 				</div>
 			</div>
@@ -57,20 +53,23 @@
 
 
 		</div>
-		<div class="col-md-9">
+		<div class="col-xs-9">
 			<h2>Book detail</h2>
 			<table class="table">
 				<tbody>
 					<tr>
 						<!-- 関連づけられたmodel から一つのカラムを取得する -->
-						<td><%= attachment_image_tag @user, :profile_image, size: "50x50"%></td>
+						<td><%= attachment_image_tag @user, :profile_image, size: "50x50"%>
+							<!-- ここらへんの変数考えるの時間かかる　 -->
+							<br><%= link_to @user.name, user_path(@user) %>
+						</td>
 						<td><%= @books.title %></td>
 						<td><%= @books.body %></td>
 						<!-- ログインしているユーザが投稿者だった場合のみ表示 -->
-						<% if user_signed_in? %>
-							<td><%= link_to "Edit", edit_book_path(@books.id), class: "btn-sm btn-success" %></td>
-							<td><%= link_to "Destroy", book_path(@books.id), method: :delete, class: "btn-sm btn-danger", "date-conform" => "本当に消しますか" %></td>
-
+						<!-- 引数の理解ができていない　user.id book.user_id -->
+						<% if current_user.id == @books.user_id %>
+							<td><%= link_to "Edit", edit_book_path(@books), class: "btn-sm btn-success" %></td>
+							<td><%= link_to "Destroy", book_path(@books), method: :delete, class: "btn-sm btn-danger", "date-conform" => "本当に消しますか" %></td>
 						<% end %>
 					</tr>
 				</tbody>

@@ -73,8 +73,12 @@
 
 							<!-- book indexで表示されたものにuser 		modelからattachment_imageを取得したい -->
 							<!-- この記述で正しいのか -->
-							<td><%= attachment_image_tag book.user, :profile_image, size: "50x50"%></td>
-							<td><%= book.title %></td>
+							<td>
+								<%= link_to users_path(book.user.id) do %>
+									<%= attachment_image_tag book.user, :profile_image, size: "50x50"%>
+								<% end %>
+							</td>
+							<td><%= link_to book.title, books_path(book.id) %></td>
 							<td><%= book.body %></td>
 
 						</tr>

@@ -39,10 +39,6 @@ class UsersController < ApplicationController
 			render = edit_user_path
 		end
 	end
-	private
-	def user_params
-		params.require(:user).permit(:name, :profile_image, :introduction)
-	end
 
 	# defore フィルター
 	def correct_user
@@ -50,6 +46,11 @@ class UsersController < ApplicationController
 		redirect_to(root_url) unless @user == current_user
 		# unless @user == current_user
 		# unless current_user?(@user)
+	end
+
+	private
+	def user_params
+		params.require(:user).permit(:name, :profile_image, :introduction)
 	end
 
 end

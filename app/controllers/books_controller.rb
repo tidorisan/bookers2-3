@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  # 特定のユーザのみ編集
+  before_action :correct_user,   only: [:edit, :update]
   def index
     # book new
     @book = Book.new
@@ -36,9 +38,33 @@ class BooksController < ApplicationController
   end
 
   def edit
-    @book = Book.find(params[:id])
+    # before user
   end
 
+  def update
+    # 注意　updateだがインスタンス変数
+    # defore フィルターで重複するので
+    # @user = User.find(params[:id])
+    # エラーメッセージ　サクセスメッセージ
+    if @user.update(user_params)
+      flash[:notice] = "successfully"
+      redirect_to user_path(@user.id)
+    else
+      flash[:notice] = "error"
+      render = edit_user_path
+    end
+  end
+
+    # defore フィルター
+  def correct_user
+    @book = Book.find(params[:id])
+    # bookに結びついた現在のユーザであるか確認
+    # ここがエラーの原因らしい　undefined local variable or method `book' for #<BooksController:0x00007f62785ed2d8> Did you mean? @book
+    redirect_to(root_url) unless @book == current_user
+    # unless @user == current_user
+    # unless current_user?(@user)
+  end
+  # ストロングパラメータ
   private
   def book_params
   	params.require(:book).permit(:title, :body)
